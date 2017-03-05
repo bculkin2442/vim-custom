@@ -24,9 +24,12 @@ set infercase
 " Indent wrapped lines
 set tw=80
 set linebreak
-set breakindent
-set breakindentopt=shift:2,sbr
-set showbreak=↪ " RIGHTWARDS ARROW WITH HOOK
+" Only do this if we have support for breakindent
+if exists('&breakindent')
+	set breakindent
+	set breakindentopt=shift:2,sbr
+	set showbreak=↪ " RIGHTWARDS ARROW WITH HOOK
+endif
 
 " Allow switching away from modified buffers
 set hidden 
