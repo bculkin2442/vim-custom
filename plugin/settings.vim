@@ -25,13 +25,14 @@ set infercase
 set tw=80
 set linebreak
 set breakindent
-set showbreak=\ \ 
+set breakindentopt=shift:2,sbr
+set showbreak=↪ " RIGHTWARDS ARROW WITH HOOK
 
 " Allow switching away from modified buffers
 set hidden 
 
 " Use a solid line for the vsplit seperator
-set fillchars="vert:|"
+set fillchars=vert:┃ " BOX DRAWINGS HEAVY VERTICAL
 
 " Set up incremental search
 set incsearch
@@ -56,9 +57,15 @@ set foldlevelstart=100 " Show most folds by default
 
 " Configure format options
 set formatoptions+=r " Insert comment leader on <Enter>
+set formatoptions+=n " Handle numbered lists correctly
+
+" Don't insert spaces on line joins
+set nojoinspaces
 
 " Autowrite on compile
 set autowrite
+" Autoread on change
+set autoread
 
 " Turn on status always
 set laststatus=2
@@ -92,3 +99,18 @@ set showcmd
 
 " Add angle brackets to matched pairs
 set matchpairs+=<:>
+
+" Keep 3 lines visible
+set scrolloff=3
+
+" Don't include capital letters in spell checking
+set spellcapcheck=
+
+" Try to reuse windows/buffers
+set switchbuf=usetab
+
+" Allow putting the curser where there isn't a character
+set virtualedit=block
+
+" Ignore class files while file searching
+set wildignore+=*.class
