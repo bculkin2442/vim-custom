@@ -11,6 +11,8 @@ nnoremap c* *Ncgn
 nnoremap <S-CR> o<ESC>
 " Insert newline above current line
 nnoremap <S-CR> O<ESC>
+" Invoke previous macro
+nnoremap <Leader>. @@
 
 " Write/quit mappings
 " Write/quit without shifting

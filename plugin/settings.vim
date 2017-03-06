@@ -109,5 +109,5 @@ set switchbuf=usetab
 " Allow putting the curser where there isn't a character
 set virtualedit=block
 
-" Ignore class files while file searching
-set wildignore+=*.class
+" Ignore class/object files while file searching
+set wildignore+=*.class,*.o
