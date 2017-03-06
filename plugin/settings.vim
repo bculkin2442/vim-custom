@@ -55,7 +55,7 @@ set autoindent
 set cinoptions+=:0 
 
 " Turn on/configure folding
-set foldmethod=syntax
+set foldmethod=indent
 set foldlevelstart=100 " Show most folds by default
 
 " Configure format options
@@ -78,12 +78,6 @@ set relativenumber
 
 " Turn on filetype detection
 filetype plugin indent on
-
-" C# options
-augroup csharp
-	autocmd!
-	autocmd FileType cs set foldmethod=indent
-augroup END
 
 " Set up dictionary autocomplete
 set dictionary=/usr/share/dict/words

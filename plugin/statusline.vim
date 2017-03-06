@@ -9,7 +9,7 @@ set statusline+=Most\ Recent\ Tag:\        " Label
 set statusline+=%{GetTagName(line(\".\"))} " Current func. name
 set statusline+=%=                         " Align to right
 set statusline+=Column:\                   " Label
-set statusline+=%c                         " Column number
+set statusline+=%v                         " Column number
 set statusline+=\ -\                       " Seperator
 set statusline+=Lines:                     " Label
 set statusline+=%4l                        " Current line-no
