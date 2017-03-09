@@ -13,4 +13,7 @@ augroup java
 	" Set compiler to maven
 	autocmd Filetype java compiler mvn
 	autocmd Filetype pom compiler mvn
+
+	" Turn on rainbow parens
+	autocmd Filetype java RainbowToggleOn
 augroup END
