@@ -22,9 +22,6 @@ nnoremap <Leader>wq :wq<CR>
 " Edit a new file in the same directory as the current one
 nnoremap <Leader>e :edit <C-R>=expand('%:p:h') . '/'<CR>
 
-" Enable/disable plugins
-" Enable/disable tagbar
-nnoremap <Leader>t :TagbarToggle<CR>
 " Enable/disable GUndo
 nnoremap <Leader>u :GundoToggle<CR>
 
