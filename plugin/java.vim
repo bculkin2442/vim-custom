@@ -3,10 +3,6 @@ augroup java
 	" Clear group
 	autocmd!
 	
-	" Use javacomplete
-	autocmd Filetype java setlocal omnifunc=javacomple#Complete
-	autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
-	
 	" Don't indent cases under switches
 	autocmd Filetype java setlocal cinoptions+=:0
 
