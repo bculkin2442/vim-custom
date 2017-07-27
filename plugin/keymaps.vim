@@ -24,6 +24,8 @@ nnoremap <Leader>e :edit <C-R>=expand('%:p:h') . '/'<CR>
 
 " Enable/disable GUndo
 nnoremap <Leader>u :GundoToggle<CR>
+" Enable/disable Tagbar
+nnoremap <Leader>t :TagbarToggle<CR>
 
 " Pane navigation commands
 " Move to a different split
