@@ -111,3 +111,5 @@ set virtualedit=block
 
 " Ignore class/object files while file searching
 set wildignore+=*.class,*.o
+" Ignore original files from astyle
+set wildignore+=*.orig
