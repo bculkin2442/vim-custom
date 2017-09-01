@@ -61,6 +61,7 @@ set foldlevelstart=100 " Show most folds by default
 " Configure format options
 set formatoptions+=r " Insert comment leader on <Enter>
 set formatoptions+=n " Handle numbered lists correctly
+set formatoptions+=j " Remove comment leader on line join
 
 " Don't insert spaces on line joins
 set nojoinspaces
