@@ -36,20 +36,28 @@ nnoremap <c-l> <c-w>l
 " Make the current split the only one
 nnoremap <Leader>o :only<CR>
 
+" Execution commands
+" Invoke make's default target
+nnoremap <Leader>m :make<CR>
+" Invoke make without a target
+nnoremap <Leader>M :make 
+
+" Quickfix commands
+" Next problem
+nnoremap <Leader>cn :cn<CR>
+" Previous problem
+nnoremap <Leader>cp :cp<CR>
+
 " Misc. commands
 " Invoke file finder
 nnoremap <Leader>f :find 
 " Invoke help on the word under the cursor
 nnoremap <Leader>h :help <C-R><C-W><CR>
-" Invoke make's default target
-nnoremap <Leader>m :make<CR>
-" Invoke make without a target
-nnoremap <Leader>M :make 
 " Disable search higlighting
 nnoremap <Leader>/ :nohlsearch<CR>
 " Toggle paste mode
 nnoremap <Leader>p :set paste!
 " Debind F1 for help
 nnoremap <F1> <nop>
-" Reload syntax highlighting
+" Resync syntax highlighting
 nnoremap <Leader>c :syntax sync fromstart<CR>

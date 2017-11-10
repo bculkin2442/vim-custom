@@ -11,15 +11,19 @@ set undodir=~/.vim/undo//
 set undodir+=.
 set undofile
 
-" Split windows to the right
-set splitright
+" Split windows to the right and below
 set splitbelow
+set splitright
 
 " Turn on searching into subfolders
 set path+=**
 
+" Set up dictionary autocomplete
+set dictionary=/usr/share/dict/words
 " Set completion to work well with cases
 set infercase
+" Enable omni-completion by default
+set omnifunc=syntaxcomplete#Complete
 
 " Indent wrapped lines
 set tw=80
@@ -80,9 +84,6 @@ set relativenumber
 " Turn on filetype detection
 filetype plugin indent on
 
-" Set up dictionary autocomplete
-set dictionary=/usr/share/dict/words
-
 " Load matchit
 runtime! macros/matchit.vim
 
@@ -114,3 +115,16 @@ set virtualedit=block
 set wildignore+=*.class,*.o
 " Ignore original files from astyle
 set wildignore+=*.orig
+" Ignore git repositories, and makefile dependancy tracking
+set wildignore+=.d,.git
+" Ignore cscope files
+set wildignore+=cscope.*
+
+" Include line numbers in printouts
+set printoptions+=number:y
+" Use uniform margins
+set printoptions+=left:1in
+set printoptions+=right:1in
+set printoptions+=top:1in
+set printoptions+=bottom:1in
+set printoptions+=paper:letter
