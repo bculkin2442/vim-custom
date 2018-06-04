@@ -8,7 +8,7 @@ set hlsearch
 syntax on
 
 " Color things properly
-colorscheme ubaryd
+colorscheme slate
 
 " Italicise comments
 " 	Uncomment when italics are working
@@ -24,3 +24,10 @@ highlight CursorLineNr ctermbg=Grey ctermfg=Black
 
 " Highlight the cursor'd line better
 " highlight CursorLine ctermbg=DarkGrey
+
+" Display syntax group under character
+function SynGroup()                                                            
+	let l:s = synID(line('.'), col('.'), 1)                                       
+
+	echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
+endfun

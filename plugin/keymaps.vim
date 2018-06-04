@@ -59,5 +59,9 @@ nnoremap <Leader>/ :nohlsearch<CR>
 nnoremap <Leader>p :set paste!
 " Debind F1 for help
 nnoremap <F1> <nop>
+inoremap <F1> <nop>
+vnoremap <F1> <nop>
 " Resync syntax highlighting
-nnoremap <Leader>c :syntax sync fromstart<CR>
+nnoremap <Leader>cs :syntax sync fromstart<CR>
+" Display syntax group
+nnoremap <Leader>cd :call SynGroup()<CR>
