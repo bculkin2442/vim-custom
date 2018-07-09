@@ -1,5 +1,6 @@
-" Enable 256 colors
+" Enable 256 colors and italics
 set t_Co=256
+set t_ZH=[3m
 
 " Set up search highlighting
 set hlsearch
@@ -12,7 +13,7 @@ colorscheme slate
 
 " Italicise comments
 " 	Uncomment when italics are working
-" highlight Comment cterm=italic
+highlight Comment cterm=italic
 
 " Highlight color columns (out-of-focus) well
 highlight ColorColumn ctermbg=Black

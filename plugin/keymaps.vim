@@ -61,7 +61,10 @@ nnoremap <Leader>p :set paste!
 nnoremap <F1> <nop>
 inoremap <F1> <nop>
 vnoremap <F1> <nop>
+cnoremap <F1> <nop>
 " Resync syntax highlighting
 nnoremap <Leader>cs :syntax sync fromstart<CR>
 " Display syntax group
 nnoremap <Leader>cd :call SynGroup()<CR>
+" Swap to counterpart
+nnoremap <Leader>= :call CurtineIncSw()<CR>

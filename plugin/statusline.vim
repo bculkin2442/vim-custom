@@ -13,3 +13,4 @@ set statusline+=%-4L                       " Total lines
 set statusline+=\(                         " Open paren
 set statusline+=%4p                        " Percent through file
 set statusline+=%%\ \)                     " End label
+set statusline+=%{strftime('%r')}          " Current time
